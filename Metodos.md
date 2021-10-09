@@ -31,3 +31,29 @@ Classe Caneta
  //Chamada para getters
  Escreva(c1.getModelo())
  Escreva(c1.getPonta())
+ 
+ # Método Construtor
+ 
+ Metodo construtor()
+  tampar()
+  cor = "Azul"
+ FimMetodo
+ 
+ Avançando com metodo construtor
+ 
+  
+ Metodo construtor()
+  (m: Caractere,
+   c: Caractere,
+   p: Real)
+   
+   setModelo(m)
+   setCor(c)
+   setPonta(p)
+   tampar()
+ FimMetodo
+ 
+ c1= nova Caneta
+  ("BIC", "Azul", "0.5")
+ 
+ 
