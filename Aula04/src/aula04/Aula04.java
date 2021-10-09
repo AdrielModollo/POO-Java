@@ -2,7 +2,7 @@ package aula04;
 
 public class Aula04 {
 	public static void main(String[] args) {
-		Caneta c1 = new Caneta("BIC", "AZUL", 0.7f);
+		Caneta c1 = new Caneta("BIC", 0.7f, "AZUL");
 		//c1.setModelo("BIC");
 		
 		//c1.modelo = ("BIC");
