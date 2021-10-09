@@ -22,3 +22,12 @@ Classe Caneta
     ponta = p
   FimMetodo
  FimClasse
+ 
+ //Chamada para setters
+ c1 = nova Caneta
+ c1.setModelo("BIC Cristal")
+ c1.setPonta(0.5)
+ 
+ //Chamada para getters
+ Escreva(c1.getModelo())
+ Escreva(c1.getPonta())
