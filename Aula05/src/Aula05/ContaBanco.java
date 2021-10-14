@@ -17,10 +17,18 @@ public class ContaBanco {
 		} else if (t == "CP"){
 			this.setSaldo(150);
 		}
+		System.out.println("Conta aberta com sucesso");
 	}
 	
 	public void fecharConta() {
-		
+		if (this.getSaldo() > 0) {
+			System.out.println("Conta não pode ser fechar por que ainda tem dinheiro!");
+		} else if (this.getSaldo() < 0) {
+			System.out.println("Conta não pode ser fechada pois tem débito");
+		} else {
+			this.setStatus(false);
+			System.out.println("Conta fechada com sucesso");
+		}
 	}
 	
 	public void depositar() {
