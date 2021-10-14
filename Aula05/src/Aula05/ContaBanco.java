@@ -7,6 +7,16 @@ public class ContaBanco {
 	protected String dono;
 	private float saldo;
 	private boolean status;
+	
+	public void estadoAtual() {
+		System.out.println("=================================");
+		System.out.println("Conta: " + this.getNumConta());
+		System.out.println("Tipo: " + this.getTipo());
+		System.out.println("Dono: " + this.getDono());
+		System.out.println("Saldo: " + this.getSaldo());
+		System.out.println("status: " + this.getStatus());
+		
+	}
 
 	//Métodos personalizados
 	public void abrirConta(String t) {
