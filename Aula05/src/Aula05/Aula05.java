@@ -16,6 +16,9 @@ public class Aula05 {
 		p2.depositar(500);
 		p2.sacar(100);
 		
+		p1.sacar(150);
+		p1.fecharConta();
+		
 		p1.estadoAtual();
 		p2.estadoAtual();
 	}
