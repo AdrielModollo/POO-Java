@@ -12,6 +12,10 @@ public class Aula05 {
 		p2.setDono("Marina");
 		p2.abrirConta("CP");
 		
+		p1.depositar(100);
+		p2.depositar(500);
+		p2.sacar(100);
+		
 		p1.estadoAtual();
 		p2.estadoAtual();
 	}
