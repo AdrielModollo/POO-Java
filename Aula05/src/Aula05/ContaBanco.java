@@ -54,7 +54,18 @@ public class ContaBanco {
 	}
 	
 	public void pagarMensal() {
-		
+		int v = 0;
+		if(this.getTipo() == "CC") {
+			v = 12;
+		} else if (this.getTipo() == "CP") {
+			v = 20;
+		}
+		if (this.getStatus()) {
+			this.setSaldo(this.getSaldo() - v);
+			System.out.println("Mensalidade paga com sucesso por" + this.getDono());
+		} else {
+			System.out.println("Impossível pagar uma conta fechada!");
+		}
 	}
 	
 	//Métodos Especiais
