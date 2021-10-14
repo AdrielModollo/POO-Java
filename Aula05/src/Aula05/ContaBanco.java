@@ -7,14 +7,38 @@ public class ContaBanco {
 	protected String dono;
 	private float saldo;
 	private boolean status;
+
+	//Métodos personalizados
+	public void abrirConta(String t) {
+		this.setTipo(t);
+		this.setStatus(true);
+		if(t == "CC") {
+			this.setSaldo(50);
+		} else if (t == "CP"){
+			this.setSaldo(150);
+		}
+	}
 	
-	public ContaBanco(int numConta, String tipo, String dono, float saldo, boolean status) {
-		super();
-		this.numConta = numConta;
-		this.tipo = tipo;
-		this.dono = dono;
-		this.saldo = saldo;
-		this.status = status;
+	public void fecharConta() {
+		
+	}
+	
+	public void depositar() {
+		
+	}
+	
+	public void sacar() {
+		
+	}
+	
+	public void pagarMensal() {
+		
+	}
+	
+	//Métodos Especiais
+	public ContaBanco() {
+		this.saldo = 0;
+		this.status = false;
 	}
 
 	public int getNumConta() {
@@ -56,6 +80,7 @@ public class ContaBanco {
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
+
 	
 	
 }
