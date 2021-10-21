@@ -101,13 +101,18 @@ public class ControleRemoto implements Controlador {
 	@Override
 	public void play() {
 		// TODO Auto-generated method stub
+		if (this.getLigado() && !(this.getTocando())) {
+			this.setTocando(true);
+		}
 		
 	}
 
 	@Override
 	public void pause() {
 		// TODO Auto-generated method stub
-		
+		if(this.getLigado() && this.getTocando()) {
+			this.setTocando(false);
+		}
 	}
 	
 	
