@@ -20,7 +20,7 @@ public class ControleRemoto implements Controlador {
 		this.volume = volume;
 	}
 
-	public boolean isLigado() {
+	public boolean getLigado() {
 		return ligado;
 	}
 
@@ -40,25 +40,29 @@ public class ControleRemoto implements Controlador {
 	@Override //Override significa descrever
 	public void ligar() {
 		// TODO Auto-generated method stub
-		
+		this.setLigado(true);
 	}
 
 	@Override
 	public void desligar() {
 		// TODO Auto-generated method stub
-		
+		this.setLigado(false);
 	}
 
 	@Override
 	public void abrirMenu() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Está ligado?" + this.getLigado());
+		System.out.println("Está tocando?" + this.getTocando());
+		System.out.print("Volume" + this.getVolume());
+		for (int i = 0; i <= this.getVolume(); i+=10) {
+			System.out.println("[]");
+		}
 	}
 
 	@Override
 	public void fecharMenu() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Fechando menu...");
 	}
 
 	@Override
