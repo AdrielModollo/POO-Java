@@ -84,14 +84,18 @@ public class ControleRemoto implements Controlador {
 
 	@Override
 	public void ligarMudo() {
-		// TODO Auto-generated method stub
+		if (this.getLigado() && this.getVolume() > 0) {
+			this.setVolume(0);
+		}
 		
 	}
 
 	@Override
 	public void desligarMudo() {
 		// TODO Auto-generated method stub
-		
+		if (this.getLigado() && this.getVolume() == 0) {
+			this.setVolume(50);
+		}
 	}
 
 	@Override
