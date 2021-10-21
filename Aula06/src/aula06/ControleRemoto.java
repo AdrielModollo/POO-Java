@@ -68,13 +68,18 @@ public class ControleRemoto implements Controlador {
 	@Override
 	public void maisVolume() {
 		// TODO Auto-generated method stub
+		if (this.getLigado() == true) {
+			this.setVolume(this.getVolume()+5);
+		}
 		
 	}
 
 	@Override
 	public void menosVolume() {
 		// TODO Auto-generated method stub
-		
+		if (this.getLigado()) {
+			this.setVolume(this.getVolume()-5);
+		}
 	}
 
 	@Override
