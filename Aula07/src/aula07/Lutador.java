@@ -72,13 +72,16 @@ public class Lutador {
 
 	public void setPeso(float peso) {
 		this.peso = peso;
+		this.setCategoria();
 	}
 
-	public String getCategoria() {
+	//Método interno
+	private String getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(String categoria) {
+
+	private void setCategoria() {
 		this.categoria = categoria;
 	}
 
