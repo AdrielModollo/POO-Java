@@ -24,7 +24,10 @@ public class Lutador {
 	}
 	
 	public void status() {
-		
+		System.out.println(this.getNome() + " é um peso " + this.getCategoria());
+		System.out.println("Ganhou " + this.getVitorias());
+		System.out.println("Perdeu " + this.getDerrotas());
+		System.out.println("Empates" + this.getEmpates());
 	}
 	
 	public void ganharLuta() {
