@@ -76,13 +76,23 @@ public class Lutador {
 	}
 
 	//Método interno
-	private String getCategoria() {
+	public String getCategoria() {
 		return categoria;
 	}
 
 
 	private void setCategoria() {
-		this.categoria = categoria;
+		if (this.peso < 52.2) {
+			this.categoria = "Inválido";
+		} else if (this.peso <= 70.3) {
+			this.categoria = "Leve";
+		} else if (this.peso <= 83.9) {
+			this.categoria = "Médio";
+		} else if (this.peso <= 120.2) {
+			this.categoria = "Pesado";
+		} else {
+			this.categoria = "Inválido";
+		}
 	}
 
 	public int getVitorias() {
