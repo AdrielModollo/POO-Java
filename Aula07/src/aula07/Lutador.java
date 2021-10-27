@@ -30,6 +30,17 @@ public class Lutador {
 	public void empatarLuta() {
 		
 	}
-	
+
 	//Métodos especiais
+	public Lutador(String nome, String nacionalidade, int idade, float peso, int vitorias, int derrotas, int empates) {
+		this.nome = nome;
+		this.nacionalidade = nacionalidade;
+		this.idade = idade;
+		this.peso = peso;
+		this.vitorias = vitorias;
+		this.derrotas = derrotas;
+		this.empates = empates;
+	}
+	
+	
 }
