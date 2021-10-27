@@ -5,6 +5,7 @@ public class Lutador {
 	private String nome;
 	private String nacionalidade;
 	private int idade;
+	private float altura;
 	private float peso;
 	private String categoria;
 	private int vitorias, derrotas, empates; 
@@ -12,7 +13,14 @@ public class Lutador {
 	//Métodos públicos
 	
 	public void apresentar() {
-		
+		System.out.println("====================================");
+		System.out.println("CHEGOU A HORA! Apresentamos o lutador " + this.getNome());
+		System.out.println("Diretamente de " + this.getNacionalidade());
+		System.out.println("com " + this.getIdade() + " anos e " + this.altura);
+		System.out.println("pesando " + this.getPeso() + " kg");
+		System.out.println(this.getVitorias() + " vitórias");
+		System.out.println(this.getDerrotas() + " derrotas e");
+		System.out.println(this.getEmpates() + " empates");
 	}
 	
 	public void status() {
