@@ -24,6 +24,7 @@ public class Lutador {
 	}
 	
 	public void status() {
+		System.out.println("======STATUS======= ");
 		System.out.println(this.getNome() + " é um peso " + this.getCategoria());
 		System.out.println("Ganhou " + this.getVitorias());
 		System.out.println("Perdeu " + this.getDerrotas());
@@ -44,10 +45,11 @@ public class Lutador {
 	}
 
 	//Métodos especiais
-	public Lutador(String nome, String nacionalidade, int idade, float peso, int vitorias, int derrotas, int empates) {
+	public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derrotas, int empates) {
 		this.nome = nome;
 		this.nacionalidade = nacionalidade;
 		this.idade = idade;
+		this.altura = altura;
 		this.peso = peso;
 		this.vitorias = vitorias;
 		this.derrotas = derrotas;
@@ -76,6 +78,14 @@ public class Lutador {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+	
+	public float getAltura() {
+		return altura;
+	}
+
+	public void setAltura(float altura) {
+		this.altura = altura;
 	}
 
 	public float getPeso() {
